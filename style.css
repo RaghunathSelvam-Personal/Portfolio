@@ -8,18 +8,19 @@
   
   .container{
     background-color: rgb(24, 24, 24);
-    color: rgb(119, 119, 119);
     height:100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
 
 .about-section{
+    color: rgb(119, 119, 119);
     font-size: larger;
     display:flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    line-height: 2rem;
 }
 
 .about{
@@ -46,16 +47,24 @@ img {
     margin-left:20px;
 
 }
-.hand:hover{
+.hand :hover{
     transition: transform .8s ease-in-out; 
     transform: rotate(360deg) rotate(360deg) rotate(360deg) rotate(180deg) rotate(-180deg) rotate(-360deg);
 }
+
+.construction{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+
 
 
 section{   
     height:100vh;
     display: flex;
-    align-items: center;
     justify-content:start;
     color: rgb(113 97 84);
     scroll-snap-align: start;
